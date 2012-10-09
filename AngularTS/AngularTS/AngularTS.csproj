@@ -28,8 +28,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="angular.d.ts" />
-    <TypeScriptCompile Include="q.d.ts" />
-    <TypeScriptCompile Include="http.d.ts" />
+    <TypeScriptCompile Include="auto\injector.d.ts" />
+    <TypeScriptCompile Include="ng\location.d.ts" />
+    <TypeScriptCompile Include="jqLite.d.ts" />
+    <TypeScriptCompile Include="ng\rootScope.d.ts" />
+    <TypeScriptCompile Include="module.d.ts" />
+    <TypeScriptCompile Include="angularPublic.d.ts" />
+    <TypeScriptCompile Include="ng\timeout.d.ts" />
+    <TypeScriptCompile Include="ng\route.d.ts" />
+    <TypeScriptCompile Include="ng\q.d.ts" />
+    <TypeScriptCompile Include="ng\http.d.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />

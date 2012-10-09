@@ -1,4 +1,3 @@
-/// <reference path="angular.d.ts" />
 /// <reference path="q.d.ts" />
 
 module angular {
@@ -41,7 +40,7 @@ module angular {
         error(fn: HttpCallback): HttpPromise;
     }
 
-    interface HttpProvider extends Provider {
+    interface HttpProvider {
         get(): HttpService;
         defaults: HttpDefaults;
         responseInterceptors: (Promise) => Promise[];
