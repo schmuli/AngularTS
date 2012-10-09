@@ -3,7 +3,6 @@
 
 module angular {
     interface HttpDefaults {
-        transformResponse(data: string): any;
         transformResponse(data: any): any;
         transformRequest(d: any): string;
 
