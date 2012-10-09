@@ -89,6 +89,7 @@ module angular {
         cache?: any;
         timeout?: number;
         withCredentials?: bool;
+        responseType: string;
     }
 
     interface HttpResponse {
