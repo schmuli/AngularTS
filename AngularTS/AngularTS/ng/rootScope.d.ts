@@ -9,18 +9,20 @@ module angular {
     }
 
     interface Scope {
+        $id: number;
+
         $new(isolate?: bool): Scope;
         $watch(watchExpression: string, listener: string, objectEquality?: bool): Function;
-        $watch(watchExpression: string, listener: Function, objectEquality?: bool): Function;
-        $watch(watchExpression: Function, listener: string, objectEquality?: bool): Function;
-        $watch(watchExpression: Function, listener: Function, objectEquality?: bool): Function;
+        $watch(watchExpression: string, listener: (newValue?: any, oldValue?: any, scope?: Scope) => void, objectEquality?: bool): Function;
+        $watch(watchExpression: (scope?: Scope) => any, listener: string, objectEquality?: bool): Function;
+        $watch(watchExpression: (scope?: Scope) => any, listener: (newValue?: any, oldValue?: any, scope?: Scope) => void, objectEquality?: bool): Function;
         $digest(): void;
         $destroy(): void;
-        $eval(exp: Function): any;
+        $eval(exp: (scope: Scope) => any): any;
         $eval(exp: string): any;
-        $evalAsync(exp: Function): void;
+        $evalAsync(exp: (scope: Scope) => any): void;
         $evalAsync(exp: string): void;
-        $apply(exp: Function): any;
+        $apply(exp: (scope: Scope) => any): any;
         $apply(exp: string): any;
         $on(name: string, listener: (event: ScopeEvent, ...args: any[]) => void ): Function;
         $emit(name: string, ...args: any[]): ScopeEvent;
