@@ -28,6 +28,7 @@ module angular {
         controller(name: string, controller: any[]): Module;
 
         directive(name: string, directiveFactory: any): Module;
+        directive(directives: Object): Module;
 
         config(configFn: Function): Module;
         run(block: Function): Module;

@@ -65,17 +65,23 @@ module angular {
         replaceWith(replaceNode: jqLite): jqLite;
         replaceWith(replaceNode: Element): jqLite;
 
-        children(): jqLite;
-        contents(): jqLite;
         append(node: Node): jqLite;
+        append(node: jqLite): jqLite;
         prepend(node: Node): jqLite;
+        prepend(node: jqLite): jqLite;
         wrap(wrapNode: Element): jqLite;
+        wrap(wrapNode: jqLite): jqLite;
         remove(): jqLite;
         after(newElement: Node): jqLite;
+        after(newElement: jqLite): jqLite;
+
         addClass(selector: string): jqLite;
         removeClass(selector: string): jqLite;
         toggleClass(selector: string, condition: bool): jqLite;
+
         parent(): jqLite;
+        children(): jqLite;
+        contents(): jqLite;
         next(): jqLite;
         find(selector: string): jqLite;
         clone(): jqLite;

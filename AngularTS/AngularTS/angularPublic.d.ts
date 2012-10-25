@@ -2,9 +2,9 @@ module angular {
     function bootstrap(element: Element, modules: any[]): any;
     function forEach(array: any[], iterator: (item: any) => void );
     function copy(source: any, destination?: any): any;
-    function equal(o1: any, o2: any): bool;
+    function equals(o1: any, o2: any): bool;
     function extend(dst: Object, ...src: Object[]): Object;
-    function noop(): void;
+    function noop(): any;
     function identity($: any): any;
     function bind(self: any, fn: Function, ...arguments: any[]): Function;
     function lowercase(value: string): string;
