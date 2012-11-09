@@ -16,4 +16,4 @@ The files will be installed to /Scripts/AngualarTS/.
 
 Within Visual Studio, add a reference to angular.d.ts.
 
-	/// <reference path="../AngularTS/angular.d.ts" />
+	/// <reference path="AngularTS/angular.d.ts" />

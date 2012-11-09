@@ -8,3 +8,5 @@
 /// <reference path="ng/timeout.d.ts" />
 /// <refernece path="ng/route.d.ts" />
 /// <reference path="ng/rootScope.d.ts" />
+/// <reference path="ng/compile.d.ts" />
+/// <reference path="ng/directives/input.d.ts" />
