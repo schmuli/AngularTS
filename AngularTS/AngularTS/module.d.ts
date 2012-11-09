@@ -31,6 +31,8 @@ module angular {
         directive(directives: Object): Module;
 
         config(configFn: Function): Module;
+        config(configFn: any[]): Module;
         run(block: Function): Module;
+        run(block: any[]): Module;
     }
 }
