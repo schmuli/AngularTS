@@ -1,6 +1,7 @@
 module angular {
     function bootstrap(element: Element, modules: any[]): any;
     function forEach(array: any[], iterator: (item: any) => void );
+    function forEach(array: Object, iterator: (value: any, key: string) => void );
     function copy(source: any, destination?: any): any;
     function equals(o1: any, o2: any): bool;
     function extend(dst: Object, ...src: Object[]): Object;
