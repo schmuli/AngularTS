@@ -10,7 +10,7 @@ This started as a clone of Mark Rendel's project, but I wanted to take it in a s
 
     Install-Package Schmulik.AngularTS
 	
-The files will be installed to /Scripts/AngualarTS/.
+The files will be installed to /Scripts/AngularTS/.
 
 ## Usage
 
