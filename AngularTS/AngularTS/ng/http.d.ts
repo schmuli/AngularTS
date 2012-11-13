@@ -19,7 +19,7 @@ module angular {
         cache?: any;
         timeout?: number;
         withCredentials?: bool;
-        responseType: string;
+        responseType?: string;
     }
 
     interface HttpResponse {

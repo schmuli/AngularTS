@@ -12,6 +12,10 @@ module angular {
     }
 
     interface jqLite {
+        (element: string): jqLite;
+        (element: jqLite): jqLite;
+        (element: Element): jqLite;
+
         ready(fn: Function): void;
         eq(index: number): jqLite;
         length: number;

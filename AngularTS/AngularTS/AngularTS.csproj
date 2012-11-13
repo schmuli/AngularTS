@@ -28,9 +28,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="angular.d.ts" />
-    <Content Include="ng\directives\input.d.js">
-      <DependentUpon>input.d.ts</DependentUpon>
-    </Content>
+    <TypeScriptCompile Include="ng\cacheFactory.d.ts" />
     <TypeScriptCompile Include="ng\directives\input.d.ts" />
     <TypeScriptCompile Include="ng\compile.d.ts" />
     <TypeScriptCompile Include="auto\injector.d.ts" />
