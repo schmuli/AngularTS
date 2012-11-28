@@ -29,7 +29,8 @@ module angular {
         port(): number;
         path(): string;
         path(path: string): LocationService;
-        search(): LocationService;
+        search(): Object;
+        search(search: Object): LocationService;
         search(search: string, paramValue?: string): LocationService;
         hash(): string;
         hash(hash: string): LocationService;

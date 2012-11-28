@@ -28,6 +28,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="angular.d.ts" />
+    <TypeScriptCompile Include="ng\directives\form.d.ts" />
+    <TypeScriptCompile Include="ng\interpolate.d.ts" />
+    <TypeScriptCompile Include="ng\parse.d.ts" />
+    <TypeScriptCompile Include="ng\exceptionHandler.d.ts" />
+    <TypeScriptCompile Include="ng\log.d.ts" />
     <TypeScriptCompile Include="ng\cacheFactory.d.ts" />
     <TypeScriptCompile Include="ng\directives\input.d.ts" />
     <TypeScriptCompile Include="ng\compile.d.ts" />

@@ -4,13 +4,15 @@ module angular {
         $modelValue: any;
         $parsers: ModelParser[];
         $formatters: ModelFormatter[];
-        $error;
+        $viewChangeListeners: Function[];
+        $error: any;
         $pristine: bool;
         $dirty: bool;
         $valid: bool;
         $invalid: bool;
+        $name: string;
 
-        $render(): void;
+        $render(): any;
         $setViewValue(value: any): void;
         $setValidity(validationErrorKey: string, isValid: bool): void;
     }
